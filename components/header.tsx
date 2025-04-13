@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
 import Link from "next/link";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Sheet, SheetClose, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import Image from "next/image";
 
 export default function Header() {
@@ -15,16 +15,16 @@ export default function Header() {
         </div>
 
         <nav className="hidden md:flex items-center gap-6">
-          <Link href="#" className="text-blue-900 hover:text-blue-500 font-medium">
+          <Link href="#home" className="text-blue-900 hover:text-blue-500 font-medium">
             Beranda
           </Link>
-          <Link href="#" className="text-blue-900 hover:text-blue-500 font-medium">
+          <Link href="#tips" className="text-blue-900 hover:text-blue-500 font-medium">
             Tips & Trik
           </Link>
-          <Link href="#" className="text-blue-900 hover:text-blue-500 font-medium">
+          <Link href="#certificate" className="text-blue-900 hover:text-blue-500 font-medium">
             Sertifikat
           </Link>
-          <Link href="#" className="text-blue-900 hover:text-blue-500 font-medium">
+          <Link href="#testimonial" className="text-blue-900 hover:text-blue-500 font-medium">
             Testimoni
           </Link>
         </nav>
@@ -44,21 +44,32 @@ export default function Header() {
           </SheetTrigger>
           <SheetContent>
             <div className="flex flex-col gap-4 mt-8">
-              <div className="flex justify-center mb-4">
-                <Image src="/images/imphnen-logo.png" alt="IMPHNEN Logo" width={150} height={50} className="h-auto" />
-              </div>
-              <Link href="#" className="text-blue-900 hover:text-blue-500 font-medium text-lg">
-                Beranda
-              </Link>
-              <Link href="#" className="text-blue-900 hover:text-blue-500 font-medium text-lg">
-                Tips & Trik
-              </Link>
-              <Link href="#" className="text-blue-900 hover:text-blue-500 font-medium text-lg">
-                Sertifikat
-              </Link>
-              <Link href="#" className="text-blue-900 hover:text-blue-500 font-medium text-lg">
-                Testimoni
-              </Link>
+              <SheetHeader>
+                <SheetTitle />
+                <div className="flex justify-center mb-4">
+                  <Image src="/images/imphnen-logo.png" alt="IMPHNEN Logo" width={150} height={50} className="h-auto" />
+                </div>
+              </SheetHeader>
+              <SheetClose asChild>
+                <Link href="#home" className="text-blue-900 hover:text-blue-500 font-medium text-lg">
+                  Beranda
+                </Link>
+              </SheetClose>
+              <SheetClose asChild>
+                <Link href="#tips" className="text-blue-900 hover:text-blue-500 font-medium text-lg">
+                  Tips & Trik
+                </Link>
+              </SheetClose>
+              <SheetClose asChild>
+                <Link href="#certificate" className="text-blue-900 hover:text-blue-500 font-medium text-lg">
+                  Sertifikat
+                </Link>
+              </SheetClose>
+              <SheetClose asChild>
+                <Link href="#testimonial" className="text-blue-900 hover:text-blue-500 font-medium text-lg">
+                  Testimoni
+                </Link>
+              </SheetClose>
               <div className="flex flex-col gap-2 mt-4">
                 <Button variant="outline" className="rounded-full">
                   Masuk

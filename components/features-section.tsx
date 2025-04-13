@@ -1,5 +1,5 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Brain, Coffee, FileCode, Gift, Lightbulb, Sparkles, Zap } from "lucide-react"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Brain, Coffee, FileCode, Gift, Lightbulb, Sparkles, Zap } from "lucide-react";
 
 const features = [
   {
@@ -38,11 +38,11 @@ const features = [
     description:
       "Dapatkan template portfolio developer keren yang bisa Anda klaim sebagai karya sendiri. Siap pakai tanpa perlu coding!",
   },
-]
+];
 
 export default function FeaturesSection() {
   return (
-    <section className="py-16 md:py-24">
+    <section className="py-16 md:py-24" id="tips">
       <div className="container">
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
           <div className="inline-flex items-center gap-2 bg-blue-100 px-3 py-1 rounded-full text-blue-500 font-medium text-sm">
@@ -75,5 +75,5 @@ export default function FeaturesSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

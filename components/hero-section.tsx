@@ -3,7 +3,7 @@ import { ArrowRight, Star } from "lucide-react";
 
 export default function HeroSection() {
   return (
-    <div className="w-full bg-gradient-to-b from-blue-50 to-white py-16 md:py-24">
+    <div className="w-full bg-gradient-to-b from-blue-50 to-white py-16 md:py-24" id="home">
       <div className="container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 text-center lg:text-left">
