@@ -10,7 +10,7 @@ export default function Header() {
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center gap-2">
           <Link href="/" className="flex items-center">
-            <Image src="/images/imphnen-logo.jpeg" alt="IMPHNEN Logo" width={100} height={35} className="h-auto" />
+            <Image src="/images/imphnen-logo.png" alt="IMPHNEN Logo" width={100} height={35} className="h-auto" />
           </Link>
         </div>
 

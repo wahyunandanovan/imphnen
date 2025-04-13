@@ -15,6 +15,9 @@ const baloo = Baloo_2({
 export const metadata: Metadata = {
   title: "IMPHNEN - Programmer Handal Tanpa Ngoding",
   description: "Ingin Menjadi Programmer Handal Namun Enggan Ngoding",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
@@ -24,9 +27,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="id" suppressHydrationWarning>
-      <head>
-        <link rel="icon" href="/favicon.ico" />
-      </head>
       <body className={`${baloo.variable} font-baloo`}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false} disableTransitionOnChange>
           <div className="flex min-h-screen flex-col">
