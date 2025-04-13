@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button"
-import { Award, Download, Medal, Star } from "lucide-react"
+import { Button } from "@/components/ui/button";
+import { Award, Download, Medal, Star } from "lucide-react";
 
 export default function CertificateSection() {
   return (
@@ -72,7 +72,7 @@ export default function CertificateSection() {
               cetak, pajang di LinkedIn, dan siap melamar kerja!
             </p>
 
-            <ul className="space-y-3">
+            <ul className="space-y-3 text-left">
               {[
                 "Sertifikat Full-Stack Developer tanpa coding",
                 "Terlihat seperti sertifikat asli dan profesional",
@@ -98,5 +98,5 @@ export default function CertificateSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
