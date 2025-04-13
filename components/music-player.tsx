@@ -42,7 +42,7 @@ export default function MusicPlayer() {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 50 }}
           transition={{ duration: 0.3 }}
-          className="fixed bottom-4 z-50 bg-white rounded-lg shadow-lg border border-blue-100 p-4 max-w-md w-full mx-4"
+          className="fixed bottom-4 z-50 bg-white rounded-lg shadow-lg border border-blue-100 p-4 max-w-md w-[90%] mx-4"
           style={{ transform: "translateX(-50%)" }}
         >
           <div className="flex items-start gap-3">
