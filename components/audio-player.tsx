@@ -16,12 +16,10 @@ export default function LazyAudioPlayer() {
 
     window.addEventListener("click", handleUserInteraction, { once: true });
     window.addEventListener("touchstart", handleUserInteraction, { once: true });
-    window.addEventListener("scroll", handleUserInteraction, { once: true });
 
     return () => {
       window.removeEventListener("click", handleUserInteraction);
       window.removeEventListener("touchstart", handleUserInteraction);
-      window.removeEventListener("scroll", handleUserInteraction);
     };
   }, [canPlay]);
 
