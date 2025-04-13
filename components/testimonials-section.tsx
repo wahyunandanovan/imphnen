@@ -20,19 +20,19 @@ const testimonials = [
     stars: 5,
   },
   {
-    name: "Joko Widodo",
-    role: "Freelancer Programmer Abal-abal",
-    image: "/placeholder.svg?height=80&width=80",
-    content:
-      "Klien saya tidak pernah tahu kalau semua kode yang saya kirim sebenarnya hasil dari ChatGPT. Penghasilan naik 300% berkat tips dari IMPHNEN!",
-    stars: 5,
-  },
-  {
     name: "Dewi Lestari",
     role: "Tech Influencer Gadungan",
     image: "/placeholder.svg?height=80&width=80",
     content:
       "Followers Instagram saya naik drastis setelah saya pura-pura jadi programmer wanita. Padahal saya cuma pakai template dari IMPHNEN!",
+    stars: 5,
+  },
+  {
+    name: "Agus Pratama",
+    role: "Penikmat Tutorial",
+    image: "/placeholder.svg?height=80&width=80",
+    content:
+      "Berkat grup ini, saya menemukan channel Programmer Zaman Now sebagai obat tidur paling ampuh. Lebih manjur dari white noise!",
     stars: 5,
   },
 ];

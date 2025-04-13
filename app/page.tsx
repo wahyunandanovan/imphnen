@@ -3,7 +3,7 @@ import FeaturesSection from "@/components/features-section";
 import TestimonialsSection from "@/components/testimonials-section";
 import CtaSection from "@/components/cta-section";
 import CertificateSection from "@/components/certificate-section";
-import AudioWrapper from "@/components/audio-wrapper";
+import MusicPlayer from "@/components/music-player";
 
 export default function Home() {
   return (
@@ -13,7 +13,7 @@ export default function Home() {
       <CertificateSection />
       <TestimonialsSection />
       <CtaSection />
-      <AudioWrapper />
+      <MusicPlayer />
     </div>
   );
 }
